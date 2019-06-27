@@ -1,0 +1,125 @@
+/**
+  位置相关  start
+ */
+// 上下左右剧中
+.sz {
+  &-row {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    display: block;
+
+    &-flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      // 垂直方向
+      &-top {
+        align-items: flex-start;
+      }
+
+      &-middle {
+        align-items: center;
+      }
+
+      &-bottom {
+        align-items: flex-end;
+      }
+
+      // 水平方向
+      &-start {
+        justify-content: flex-start;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-end {
+        justify-content: flex-end;
+      }
+
+      &-around {
+        justify-content: space-around;
+      }
+
+      &-between {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &-col {
+    min-height: rem(1);
+    width: 16.66% !important;
+
+    &-flex {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      // 垂直方向
+      &-start {
+        align-items: flex-start;
+      }
+
+      &-middle {
+        align-items: center;
+      }
+
+      &-end {
+        align-items: flex-end;
+      }
+
+      // 水平方向
+      &-top {
+        justify-content: flex-start;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-bottom {
+        justify-content: flex-end;
+      }
+
+      &-space-around {
+        justify-content: space-around;
+      }
+
+      &-space-between {
+        justify-content: space-between;
+      }
+    }
+
+    &-1 {
+      width: 16.66% !important;
+    }
+
+    &-2 {
+      width: 33.33% !important;
+    }
+
+    &-3 {
+      width: 50% !important;
+    }
+
+    &-4 {
+      width: 66.664% !important;
+
+    }
+
+    &-5 {
+      width: 83.33% !important;
+
+    }
+
+    &-6 {
+      width: 100% !important;
+    }
+
+  }
+}
